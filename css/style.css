@@ -219,7 +219,7 @@ on
 
 .transform:hover{
   transform:translate(20px);
-  transition: (2);
+  transition: 0.2s;
   background-color:#e41f437e;
   cursor: pointer
 }
