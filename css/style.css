@@ -214,8 +214,15 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   color: black;
-
+on
 }
+
+.transform:hover{
+  transform:translate(20px);
+  background-color:#e41f437e;
+  cursor: pointer
+}
+
 /* End of Clases Index */
 
 /* Clases Nuestra Historia */
@@ -559,3 +566,4 @@ body {
     grid-template-columns: repeat(1, 1fr);  
   } 
 }
+/* Clases de Responsive*/
