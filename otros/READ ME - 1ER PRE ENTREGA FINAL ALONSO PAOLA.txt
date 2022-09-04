@@ -1,0 +1,22 @@
+Hola María Julia, cómo estás?
+Aquí los links de todos los wireframe.
+
+
+Versión Web
+1.index https://wireframe.cc/pro/pp/b8e979ab7571086
+3.nuestra historia https://wireframe.cc/pro/pp/f3adc69e0572781
+5.productos https://wireframe.cc/pro/pp/44ce3178a572783
+7.escuela https://wireframe.cc/pro/pp/7c449b80c572790
+9.tiendas https://wireframe.cc/pro/pp/cc3c852be572793
+
+
+Versión Mobile
+2.index https://wireframe.cc/pro/pp/84506902c571092
+4.nuestra historia https://wireframe.cc/pro/pp/f4d2ccc9a572778
+6.productos https://wireframe.cc/pro/pp/de6a5710d572784
+8.escuela https://wireframe.cc/pro/pp/2295dd6de572792
+10.tiendas https://wireframe.cc/pro/pp/2bc2b54e9572794
+
+
+Saludos,
+Paola Alonso
