@@ -214,14 +214,20 @@ body {
   margin-top: 5px;
   margin-bottom: 5px;
   color: black;
-on
 }
 
 .transform:hover{
   transform:translate(20px);
   transition: 0.2s;
-  background-color:#e41f437e;
-  cursor: pointer
+  /*background-color:#e41f437e;*/
+  cursor: pointer;
+}
+
+.transform-bg:hover{
+  transition: 0.2s;
+  background-color:#fe96a9;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 /* End of Clases Index */
