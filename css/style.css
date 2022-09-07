@@ -13,6 +13,14 @@
   display: flex;
   justify-content: space-between;
 }
+
+.container-fluid{
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navbar li {
   display: inline-block;
   padding: 0 25px;
@@ -30,6 +38,24 @@
 }
 .navbar li a:hover {
   color: #ffcaf3;
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: rgb(241, 237, 237);
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+  margin-right: 15px;
+}
+
+@media (min-width: 992px) {
+.navbar-expand-lg {
+    flex-wrap: nowrap;
+}
 }
 /* End of Clases Nav */
 
@@ -63,7 +89,6 @@ body {
   color: black;
   font-size: 1.5rem;
   font-weight: 600;
-
   margin: 0;
 }
 .title3 {
@@ -131,44 +156,62 @@ body {
 /* End of Clases Footer */
 
 /* Clases Index */
-.gridindex {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "labialesblurmarron superbase labialfluido"
-  "labialvioleta baselight paletanude";
-  padding: 25px;
-  align-items: center;
-  border: solid 1px rgb(239, 236, 236);
-  border-radius: 15px;
+
+.index1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
   text-align: center;
-  margin: 20px;
-  background-color: white;
 }
 
-.labialesblurmarron{
-  grid-area: labialesblurmarron;
+.card-title {
+    margin-bottom: var(--bs-card-title-spacer-y);
+    font-style: bold;
+    font-weight: 600;
+    color: #495057;
+  }   
+
+  .card-img, .card-img-top {
+    border-top-right-radius: var(--bs-card-inner-border-radius);
+    border-top-left-radius: var(--bs-card-inner-border-radius);
+    margin-top: 10px;
 }
 
-.superbase{
-  grid-area: superbase;
-}
-
-.labialfluido{
-  grid-area: labialfluido;
-}
-
-.labialvioleta{
-  grid-area: labialvioleta;
-}
-
-.baselight{
-  grid-area: baselight;
-}
-
-.paletanude{
-  grid-area: paletanude;
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: 0.375rem;
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(0.375rem - 1px);
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: #fff;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border-radius: var(--bs-card-border-radius);
+  margin-bottom: 30px;
 }
 
 .cursosindex{
@@ -209,11 +252,21 @@ body {
   background-color: #e41f43;
 }
 
-.titleppalindex{
+a {
+  color: #e41f43;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.titleppalindex {
   font-size: 30px;
   margin-top: 5px;
   margin-bottom: 5px;
   color: black;
+  font-weight: 600;
 }
 
 .transform:hover{
@@ -223,46 +276,7 @@ body {
   cursor: pointer;
 }
 
-.transform-bg:hover{
-  transition: 0.2s;
-  background-color:#fe96a9;
-  cursor: pointer;
-  border-radius: 10px;
-}
-
-.degradeindex{
-  background: linear-gradient(to top, rgb(248, 243, 244), rgb(196, 188, 188) );
-  border-radius: 15px;
-  padding-left: 15px;
-}
 /* End of Clases Index */
-
-/* Clases Nuestra Historia */
-.container-mihistoria{
-  padding: 25px;
-  border: solid 1px rgb(239, 236, 236);
-  background-color: white;
-  display: flex;
-  flex-direction: row;
-  border-radius: 15px;
-  margin: 20px;
-}
-
-.col-mihistoria{
-  display: inline-flex;
-  }
-
-.image-mihistoria{
-  border-radius: 30px;
-  padding: 15px;
-  margin-right: 15px;
-}
-
-.text-mihistoria{
-  text-align: center;
-  font-size: 0.83rem;
-}
-/* End of Clases Nuestra Historia */
 
 /* Clases Section Productos */
 .container-prod {
@@ -291,30 +305,7 @@ body {
   font-weight: 400;
   margin: 0;
 }
-.placeholder-contact {
-  padding: 10px;
-  font-size: 0.75rem;
-  width: 75%;
-  border-radius: 10px;
-  border: solid 2px #e4e4e4;
-  margin-bottom: 10px;
-  color: #f7365a;
-}
 
-@keyframes animatediv {
-  0% {width: 100px;}
-  50% { width: 200px;}
-  100%{ width: 100px; background-color: pink;}
-
-}
-
-.animate-producto{
-  animation-name: animatediv;
-  animation-duration: 5s;
-  animation-iteration-count: 2;
-  animation-timing-function: linear;
-  animation-delay: 2s;
-}
 /* End of Clases Section Productos */
 
 /* Producto */
@@ -528,6 +519,16 @@ body {
 /* End of Clases Tiendas */
 
 /* Clases Contacto */
+
+.placeholder-contact {
+  padding: 10px;
+  font-size: 0.75rem;
+  width: 75%;
+  border-radius: 10px;
+  border: solid 2px #e4e4e4;
+  margin-bottom: 10px;
+  color: #f7365a;
+}
 .button-enviar {
   background-color: #f7365a;
   border: none;
@@ -574,25 +575,52 @@ body {
 }
 /* Enf of clases Contacto */
 
-/* Clases de Responsive*/
 
-@media (max-width: 1024px) {  
-  .version {    
-    grid-template-columns: repeat(3, 1fr);    
-    gap: 50px;
-  } 
-}
-
-@media (max-width: 768px) {  
-  .version {    
-    grid-template-columns: repeat(2, 1fr);    
-    gap: 40px;  
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    padding-right: var(--bs-navbar-nav-link-padding-x);
 }
 }
 
-@media (max-width: 640px) {  
-  .version {    
-    grid-template-columns: repeat(1, 1fr);  
-  } 
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+  .card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 1px;
+    --bs-card-border-color: rgb(0 0 0 / 0%);
+    --bs-card-border-radius: 15px;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    border: 0;
+    -webkit-box-shadow: 3px 3px 10px 3px #f4f4f4;
+    -moz-box-shadow: 3px 3px 10px 3px #f4f4f4;
+    box-shadow: 3px 3px 10px 3px #f4f4f4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
 }
-/* Clases de Responsive*/
+.navbar li {
+  display: inline-block;
+  padding: 10px;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.navbar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+}
+
