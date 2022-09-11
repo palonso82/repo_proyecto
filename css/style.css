@@ -63,6 +63,9 @@
 .banner {
   width: 100%;
 }
+
+.imagenbanner:hover {filter: opacity(.5);}
+
 /* End of principal img*/
 
 /* Clases Background */
@@ -164,6 +167,11 @@ body {
   padding-bottom: 30px;
 }
 
+
+.h5, h5 {
+  font-size: 1.25rem;
+  text-align: center;
+}
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -239,7 +247,8 @@ body {
   padding: 1px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
@@ -247,11 +256,28 @@ body {
   margin-right: 15px;
   margin-left: 20px;
 }
-
 .button-ctaindex:hover {
   background-color: #e41f43;
 }
-
+.button-ctamasinfo {
+  background-color: #c851e8ee;; 
+  border: none;
+  color: white;
+  padding: 1px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+.button-ctamasinfo:hover {
+  background-color: #9b07c4ee;
+}
 a {
   color: #e41f43;
   text-decoration: underline;
@@ -279,6 +305,21 @@ a:hover {
 /* End of Clases Index */
 
 /* Clases Section Productos */
+
+.button-container{
+    display: flex;
+    position: absolute;
+    margin-top: 10px;
+    background-color: black;
+    flex-direction: row;
+    border-radius: inherit;
+    border-color: black;
+    font-family: 'Poppins';
+    color: white;
+    z-index: 50;
+
+}
+
 .container-prod {
   padding: 25px;
   border: solid 1px rgb(239, 236, 236);
@@ -304,6 +345,49 @@ a:hover {
   color: #505050;
   font-weight: 400;
   margin: 0;
+}
+
+.button-ctaprod {
+  background-color: #f7365a;
+  border: none;
+  color: white;
+  padding: 1px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.button-ctaprod:hover {
+  background-color: #e41f43;
+}
+
+a {
+  color: #e41f43;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+
+.price {
+text-align: center;
+color: black;
+font-weight: 600;
+}
+
+.sku{
+  text-align: center;
+  color: grey;
+  font-size: 0.8rem;
 }
 
 /* End of Clases Section Productos */
@@ -334,51 +418,13 @@ a:hover {
 }
 /* End of Producto */
 
-/* Clases Social Makeup*/
-.gridsocialmakeup {
-  display: grid;
-  grid-template-columns: 290px 290px 290px 290px 290px;
-  grid-row: 10px;
-  grid-template-areas: 
-  "modelo1 modelo2 modelo3 modelo4 modelo5"
-  "modelo1 modelo2 modelo3 modelo4 modelo5"
-  "modelo1 modelo2 modelo3 modelo4 modelo5";
-  padding: 25px;
-  background-color: #f2f2f2;
-  border: solid 1px rgb(239, 236, 236);
-  border-radius: 15px;
-  margin-bottom: 30px;
-}
-
-.modelo1{
-    grid-area: modelo1;
-}
-
-.modelo2{
-    grid-area: modelo2;
-}
-
-.modelo3{
-    grid-area: modelo3;
-}
-
-.modelo4{
-    grid-area: modelo4;
-}
-
-.modelo5{
-    grid-area: modelo5;
-}
-
-.image-socialmakeup{
-  border-radius: 15px;
-}
-/* End of Social Makeup */
-
 /* Clases Consejos*/
 .background-box-consejos {
-  display: inline-flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
+
 .container-consejos {
   padding: 25px;
   border: solid 1px rgb(239, 236, 236);
@@ -427,13 +473,24 @@ a:hover {
   margin-bottom: 15px;
   margin-top: 10px;
 }
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  text-align: left;
+}
+
+.card-text:last-child {
+  margin-bottom: 12px;
+}
 /* End of Clases Consejos*/
 
 /* Clases Escuela*/
 .container-escuela{
-  display: inline-block;
+  display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   background-color: white;
   border-radius: 15px;
   padding: 20px;
@@ -448,7 +505,7 @@ a:hover {
   color: #000000;
   font-weight: 600;
   text-align: center;
-  margin-top: 3px;
+  margin-top: 12px;
 }
 
 .image-escuela{
@@ -457,7 +514,7 @@ a:hover {
 }
 
 .button-ctaescuela {
-  background-color: #f7365a;
+  background-color: #c851e8ee;
   border: none;
   color: white;
   padding: 1px 162px;
@@ -470,9 +527,9 @@ a:hover {
 }
 
 .button-ctaescuela:hover {
-  background-color: #e41f43;
+  background-color: #9b07c4ee;
+    color: #ffffff;
 }
-
 
 /* End of Clases Escuela*/
 
