@@ -64,7 +64,9 @@
   width: 100%;
 }
 
-.imagenbanner:hover {filter: opacity(.5);}
+.imagenbanner:hover{
+  filter: opacity(.5);
+}
 
 /* End of principal img*/
 
@@ -128,9 +130,6 @@ body {
   font-weight: 400;
   font-family: "lato", sans-serif;
 }
-.text-center {
-  text-align: center;
-}
 /* End of Clases de Textos*/
 
 /* Clases Footer */
@@ -161,17 +160,15 @@ body {
 /* Clases Index */
 
 .index1{
-  display: flex;
-  flex-direction: row;
   justify-content: space-around;
   padding-bottom: 30px;
 }
-
 
 .h5, h5 {
   font-size: 1.25rem;
   text-align: center;
 }
+
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
@@ -186,7 +183,7 @@ body {
     color: #495057;
   }   
 
-  .card-img, .card-img-top {
+.card-img, .card-img-top {
     border-top-right-radius: var(--bs-card-inner-border-radius);
     border-top-left-radius: var(--bs-card-inner-border-radius);
     margin-top: 10px;
@@ -235,30 +232,6 @@ body {
   justify-content: space-between;
 }
 
-.cursosindeximg{
-  border-radius: 15px;
-  margin-bottom: 15px;
-}
-
-.button-ctaindex {
-  background-color: #f7365a;
-  border: none;
-  color: white;
-  padding: 1px 25px;
-  text-align: center;
-  text-decoration: none;
-  display: flex;
-  flex-direction: column;
-  font-size: 0.8rem;
-  font-weight: 600;
-  cursor: pointer;
-  border-radius: 10px;
-  margin-right: 15px;
-  margin-left: 20px;
-}
-.button-ctaindex:hover {
-  background-color: #e41f43;
-}
 .button-ctamasinfo {
   background-color: #c851e8ee;; 
   border: none;
@@ -287,18 +260,9 @@ a:hover {
   color: #ffffff;
 }
 
-.titleppalindex {
-  font-size: 30px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  color: black;
-  font-weight: 600;
-}
-
 .transform:hover{
   transform:translate(20px);
   transition: 0.2s;
-  /*background-color:#e41f437e;*/
   cursor: pointer;
 }
 
@@ -419,6 +383,14 @@ font-weight: 600;
 /* End of Producto */
 
 /* Clases Consejos*/
+.consejos-subtitle {
+  font-size: 0.85rem;
+  color: #505050;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
 .background-box-consejos {
   display: flex;
   flex-direction: row;
@@ -457,21 +429,15 @@ font-weight: 600;
   border-radius: 15px;
   margin-bottom: 20px;
 }
-.box-items-consejos-last {
-  border: solid 1px #bcbcbc;
-  padding: 25px 25px 15px 25px;
-  border-radius: 15px;
-}
+
 .image-box-extraconsejos {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 15px;
 }
 .image-box-extraconsejos2 {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  margin-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 .card-body {
@@ -497,20 +463,11 @@ font-weight: 600;
   margin: 20px;
 }
 
-.col-escuela{
-  display: inline-flex;
-}
-
 .subtitle-escuela {
   color: #000000;
   font-weight: 600;
   text-align: center;
   margin-top: 12px;
-}
-
-.image-escuela{
-  max-height: 270px;
-  border-radius: 15px;
 }
 
 .button-ctaescuela {
@@ -530,7 +487,6 @@ font-weight: 600;
   background-color: #9b07c4ee;
     color: #ffffff;
 }
-
 /* End of Clases Escuela*/
 
 /* Clases Tiendas */
@@ -576,6 +532,21 @@ font-weight: 600;
 /* End of Clases Tiendas */
 
 /* Clases Contacto */
+
+.map-responsive{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+}
+
+.map-responsive iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
 
 .placeholder-contact {
   padding: 10px;
