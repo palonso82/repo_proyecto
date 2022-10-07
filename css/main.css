@@ -1,0 +1,623 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,400;0,700;1,400&display=swap");
+/* Clases Nav */
+.logo {
+  width: 180px;
+  padding: 15px;
+}
+
+.navbar {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-fluid {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar li {
+  display: inline-block;
+  padding: 0 25px;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+.navbar li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+}
+
+.navbar li a:hover {
+  color: #ffcaf3;
+}
+
+.navbar-toggler {
+  padding: var(--bs-navbar-toggler-padding-y) var(--bs-navbar-toggler-padding-x);
+  font-size: var(--bs-navbar-toggler-font-size);
+  line-height: 1;
+  color: var(--bs-navbar-color);
+  background-color: rgb(241, 237, 237);
+  border: var(--bs-border-width) solid var(--bs-navbar-toggler-border-color);
+  border-radius: var(--bs-navbar-toggler-border-radius);
+  transition: var(--bs-navbar-toggler-transition);
+  margin-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg {
+    flex-wrap: nowrap;
+  }
+}
+/* End of Clases Nav */
+/* Clases principal img*/
+.banner {
+  width: 100%;
+}
+
+.imagenbanner:hover {
+  filter: opacity(0.5);
+}
+
+/* End of principal img*/
+/* Clases Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-background {
+  background: #f9f9f9;
+  margin: 0;
+  padding: 30px;
+}
+
+/* End of Clases Background */
+/* Clases Headings*/
+.title1 {
+  color: black;
+  font-size: 2rem;
+  font-weight: 600;
+  margin: 0;
+  padding-bottom: 25px;
+}
+
+.title2 {
+  color: black;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.title3 {
+  color: black;
+  font-size: 1.15rem;
+  margin: 0;
+}
+
+.title4 {
+  color: black;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.title5 {
+  color: black;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.title6 {
+  color: black;
+  font-size: 0.75rem;
+  margin: 0;
+}
+
+.subtitle {
+  color: black;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* End of Clases Headings*/
+/* Clases Textos*/
+.text {
+  color: black;
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-family: "lato", sans-serif;
+}
+
+/* End of Clases de Textos*/
+/* Clases Footer */
+.footer {
+  background: #000000;
+  height: 90px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 35px;
+  padding: 25px;
+}
+
+.social-icons-space {
+  width: 35px;
+  padding-left: 15px;
+}
+
+.copyright {
+  background: #181818;
+  color: #6f6f6f;
+  padding: 10px;
+  font-size: 0.75rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+/* End of Clases Footer */
+/* Clases Index */
+.index1 {
+  justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+.h5, h5 {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  text-align: center;
+}
+
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  font-style: bold;
+  font-weight: 600;
+  color: #495057;
+}
+
+.card-img, .card-img-top {
+  border-top-right-radius: var(--bs-card-inner-border-radius);
+  border-top-left-radius: var(--bs-card-inner-border-radius);
+  margin-top: 10px;
+}
+
+.card {
+  --bs-card-spacer-y: 1rem;
+  --bs-card-spacer-x: 1rem;
+  --bs-card-title-spacer-y: 0.5rem;
+  --bs-card-border-width: 1px;
+  --bs-card-border-color: var(--bs-border-color-translucent);
+  --bs-card-border-radius: 0.375rem;
+  --bs-card-box-shadow: ;
+  --bs-card-inner-border-radius: calc(0.375rem - 1px);
+  --bs-card-cap-padding-y: 0.5rem;
+  --bs-card-cap-padding-x: 1rem;
+  --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+  --bs-card-cap-color: ;
+  --bs-card-height: ;
+  --bs-card-color: ;
+  --bs-card-bg: #fff;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border-radius: var(--bs-card-border-radius);
+  margin-bottom: 30px;
+}
+
+.indexbox {
+  width: 18rem;
+}
+
+.cursosindex {
+  display: flex;
+  padding: 25px;
+  align-items: center;
+  border: solid 1px rgb(239, 236, 236);
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px;
+  background-color: white;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button-ctamasinfo {
+  background-color: rgba(200, 81, 232, 0.9333333333);
+  border: none;
+  color: white;
+  padding: 1px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.button-ctamasinfo:hover {
+  background-color: rgba(155, 7, 196, 0.9333333333);
+}
+
+a {
+  color: #e41f43;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.transform:hover {
+  transform: translate(20px);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+/* End of Clases Index */
+/* Clases Section Productos */
+.button-container {
+  display: flex;
+  position: absolute;
+  margin-top: 10px;
+  background-color: black;
+  flex-direction: row;
+  border-radius: inherit;
+  border-color: black;
+  font-family: "Poppins";
+  color: white;
+  z-index: 50;
+}
+
+.container-prod {
+  padding: 25px;
+  border: solid 1px rgb(239, 236, 236);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  text-align: center;
+  margin: 20px;
+}
+
+.image-sm {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.col-products {
+  display: inline-flex;
+}
+
+.main-products {
+  padding: 35px;
+}
+
+.productos-subtitle {
+  font-size: 0.85rem;
+  color: #505050;
+  font-weight: 400;
+  margin: 0;
+}
+
+.button-ctaprod {
+  background-color: #f7365a;
+  border: none;
+  color: white;
+  padding: 1px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 15px;
+  margin-left: 20px;
+}
+
+.button-ctaprod:hover {
+  background-color: #e41f43;
+}
+
+a {
+  color: #e41f43;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+.price {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+
+.sku {
+  text-align: center;
+  color: grey;
+  font-size: 0.8rem;
+}
+
+.prodbox {
+  width: 18rem;
+}
+
+/* End of Clases Section Productos */
+/* Clases Consejos*/
+.consejos-subtitle {
+  font-size: 0.85rem;
+  color: #505050;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.background-box-consejos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.container-consejos {
+  padding: 25px;
+  border: solid 1px rgb(239, 236, 236);
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px 20px 40px 20px;
+}
+
+.subtitle-consejos {
+  color: #f7365a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.arrow-consejos {
+  padding-bottom: 5px;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.box-items-consejos {
+  border: solid 1px #bcbcbc;
+  padding: 25px 25px 15px 25px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: var(--bs-card-color);
+  text-align: left;
+}
+
+.card-text:last-child {
+  margin-bottom: 12px;
+}
+
+/* End of Clases Consejos*/
+/* Clases Escuela*/
+.container-escuela {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.subtitle-escuela {
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 12px;
+}
+
+.button-ctaescuela {
+  background-color: rgba(200, 81, 232, 0.9333333333);
+  border: none;
+  color: white;
+  padding: 11px 162px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.button-ctaescuela:hover {
+  background-color: rgba(155, 7, 196, 0.9333333333);
+  color: #ffffff;
+}
+
+.alturapic {
+  width: 30rem;
+}
+
+/* End of Clases Escuela*/
+/* Clases Tiendas */
+.tiendas-subtitle {
+  font-size: 0.85rem;
+  color: #505050;
+  font-weight: 400;
+  margin: 0;
+  padding-bottom: 35px;
+}
+
+.section-box-bg-tienda {
+  display: inline-flex;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.03), 0 5px 9px rgba(0, 0, 0, 0.03);
+  height: 330px;
+  margin-bottom: 35px;
+  width: 100%;
+}
+
+.section-map-bg-tienda {
+  width: 100%;
+}
+
+.section-image-color {
+  background: #f2f2f2;
+}
+
+.background-box-tienda {
+  background: white;
+  height: 260px;
+  width: 100%;
+  padding: 35px;
+}
+
+.background-box-office {
+  display: inline-flex;
+  padding: 20px;
+}
+
+.main-tiendas {
+  padding: 35px;
+}
+
+/* End of Clases Tiendas */
+/* Clases Contacto */
+.placeholder-contact {
+  padding: 10px;
+  font-size: 0.75rem;
+  width: 75%;
+  border-radius: 10px;
+  border: solid 2px #e4e4e4;
+  margin-bottom: 10px;
+  color: #f7365a;
+}
+
+.btn-enviar {
+  background-color: #f7365a;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.btn-cancelar {
+  background-color: #000000;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.h3-space {
+  margin-bottom: 20px;
+}
+
+.section-form {
+  display: flex;
+  height: 500px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  justify-content: space-around;
+}
+
+.consultasText {
+  color: #505050;
+  font-size: 0.8rem;
+  line-height: 0.7rem;
+}
+
+.card-title {
+  margin-bottom: var(--bs-card-title-spacer-y);
+  font-style: bold;
+  font-weight: 600;
+  color: #495057;
+  text-align: left;
+}
+
+/* Enf of clases Contacto */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-left: var(--bs-navbar-nav-link-padding-x);
+    padding-right: var(--bs-navbar-nav-link-padding-x);
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+  .card {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-border-width: 1px;
+    --bs-card-border-color: rgb(0 0 0 / 0%);
+    --bs-card-border-radius: 15px;
+    --bs-card-inner-border-radius: calc(0.375rem - 1px);
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: rgba(0, 0, 0, 0.03);
+    --bs-card-bg: #fff;
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    border: 0;
+    box-shadow: 3px 3px 10px 3px #f4f4f4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+  }
+  .navbar li {
+    display: inline-block;
+    padding: 10px;
+    font-size: 0.85rem;
+    font-weight: 400;
+  }
+  .navbar ul {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
