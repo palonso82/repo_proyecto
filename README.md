@@ -9,7 +9,7 @@ Sitio web "Pao Alonso Make Up"
 Pao Alonso es Maquilladora y Cosmetóloga.
 
 Desarrollamos un sitio web con varias secciones: Index, Productos, Brochas y Accesorios, Consejos, Escuela y Contacto. Todo nuestro sitio es 100% Responsive.
-Usamos CSS y SASS. Nuestro sitio está subido en github, pages y en un servidor.
+Usamos CSS. Nuestro sitio está subido en github, pages y en un servidor.
 
 Nustro sitio web tiene 27 páginas html con sus respectivos diseños. Cada html cuenta con información diferente.
 
